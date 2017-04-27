@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="schirmer.nicolas.targettrust.LoginActivity">
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="-300dp"
+        android:layout_marginLeft="-300dp"
+        android:layout_marginStart="-300dp"
+        android:layout_marginRight="-300dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:scaleType="fitXY"
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.5"
+        app:srcCompat="@drawable/shadow"
+        android:layout_marginRight="0dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="0dp"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintBottom_toBottomOf="@+id/videoView"
+        android:layout_marginBottom="0dp" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="192dp" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline2"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.08"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="31dp" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline3"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.93"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="357dp" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline4"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.11"
+        tools:layout_editor_absoluteY="63dp"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline5"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.33"
+        tools:layout_editor_absoluteY="187dp"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="314dp"
+        android:layout_height="228dp"
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/logo_tt"
+        app:layout_constraintTop_toTopOf="@+id/guideline4"
+        app:layout_constraintBottom_toTopOf="@+id/guideline5"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline2"
+        app:layout_constraintRight_toLeftOf="@+id/guideline3"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintVertical_bias="0.495" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline6"
+        app:layout_constraintGuide_begin="291dp"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteY="291dp"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="wrap_content"
+        android:layout_height="47dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edit_rounded"
+        android:ems="10"
+        android:hint="e-mail"
+        android:textColor="@color/colorGray"
+        android:textColorHint="@color/colorGray"
+        android:paddingStart="15dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingEnd="15dp"
+        android:maxLines="1"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toBottomOf="@+id/button"
+        app:layout_constraintHorizontal_bias="0.521"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline2"
+        app:layout_constraintRight_toLeftOf="@+id/button"
+        app:layout_constraintTop_toTopOf="@+id/guideline6" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Entrar"
+        android:background="@drawable/button_rounded"
+        app:layout_constraintTop_toTopOf="@+id/guideline6"
+        android:layout_marginTop="7dp"
+        app:layout_constraintRight_toLeftOf="@+id/guideline3"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.00999999" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="70dp"
+        android:layout_height="88dp"
+        android:alpha="0.5"
+        app:srcCompat="@drawable/bugdroid"
+        app:layout_constraintBottom_toBottomOf="@+id/videoView"
+        android:layout_marginBottom="48dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline2"
+        app:layout_constraintRight_toLeftOf="@+id/guideline3"
+        android:layout_marginRight="8dp"
+        app:layout_constraintHorizontal_bias="0.502"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+</android.support.constraint.ConstraintLayout>
